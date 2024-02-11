@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": { 
+    "first": "Max" ,
+    "lastname": "Mal",
+    "age": 34,
+    "currency": "RUB",
+    "country": "Russia",
+    "cyty": "SPb",
+    "username": "admin",
+    "avatar": "https://fonoteka.top/uploads/posts/2023-04/1680736729_phonoteka-org-p-khaker-men-art-vkontakte-2.jpg"
+  }
 }
