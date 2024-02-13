@@ -5,22 +5,22 @@ import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/Dynamic
 
 const reducers: ReducersList = {
     profile: profileReducer,
-}
+};
 
 interface ProfilePageProps {
     className?: string;
 }
 
-const ProfilePage = ({className} :ProfilePageProps) => {
+const ProfilePage = ({ className } :ProfilePageProps) => {
     const { t } = useTranslation();
 
     return (
-       <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <div className={classNames('', {}, [className])}>
                 {t('Profile page')}
             </div>
-       </DynamicModuleLoader>
-           );
+        </DynamicModuleLoader>
+    );
 };
 
 export default ProfilePage;
